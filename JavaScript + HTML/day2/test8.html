@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li 태그의 (n)번째 자식에게 배경색 지정 (홀수 및 짝수도 지정 가능) */
+        li:nth-child(1) {
+            background-color: yellow;
+        }
+
+        li:nth-child(3) {
+            background-color: greenyellow;
+        }
+        
+        /* li 태그와 같은 타입 태그 중 n번째 요소 배경색 지정 */
+        li:nth-of-type(4) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item1</li>
+        <div>div1</div>
+        <li>item2</li>
+        <li>item3</li>
+        <div>div2</div>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+</body>
+</html>
