@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 문단 첫 줄 선택자 */
+        p::first-line {
+            background-color: yellow;
+        }
+
+        /* 문단 첫 글자 선택자 */
+        p::first-letter {
+            /* 글자를 대문자로 변경 */
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <!-- lorem = 임의의 문장을 생성 (*n으로 몇 개의 문장을 생성할 지 선택) -->
+    <!-- lorem + n = 임의의 단어를 n개 만큼 생성 -->
+    <!-- <b> = 진한 글자 (inline) / <em> = 눕혀쓰기-->
+    <p>lorem, ipsum dolor.</p>
+    <p>a Lorem <em>ipsum</em> dolor <b>진한 글자</b> sit amet consectetur adipisicing elit. Quasi deleniti suscipit totam natus fugiat non tempora, sed saepe sapiente magnam ipsa. Nesciunt magni soluta ipsa illo fugiat earum, sapiente esse!</p>
+</body>
+</html>
