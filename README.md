@@ -3,5 +3,5 @@
 <h3>2025.03.11 ~ 2025.08.29</h3>
 <hr>
 <p>2025.03.11 ~ 2025.03.25 <b>HTML & CSS + JavaScript </b></p>
-<p>review) ? ? ?</p>
+<p><b>review)</b>b> ? ? ?</p>
 <hr>
