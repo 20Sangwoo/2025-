@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dongle&family=Orbit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=photo_camera" />
+    <style>
+        * {
+            outline: 1px solid red;
+        }
+
+        header {
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+        /* .logo, .menu, .membership {
+            flex: 1 1 auto;
+        } */
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo, .mebership {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .menu {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .menu .menu_item {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-width: 60px /* 최소폭 60px로 설정 */
+        }
+
+        .mebership {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="logo">
+            <li class="logo_img">
+                <span>icon</span>
+            </li>
+            <li class="logo_txt">
+                <span class="logo_txt-left">photobox</span>
+                <span class="logo_txt-right">.com</span>
+            </li>
+        </ul>
+        <nav class="menu">
+            <a class="menu_item" href="">menu-1</a>
+            <a class="menu_item" href="">menu-2</a>
+            <a class="menu_item" href="">menu-3</a>
+            <a class="menu_item" href="">menu-4</a></nav>
+        </nav>
+        <ul class="membership">
+            <li class="join">membership</li>
+            <li class="login">login-in</li>
+        </ul>
+    </header>
+</body>
+</html>
