@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label:not([for^="h"]):hover {
+            color: green;
+            font-size: 30px;
+        }
+
+        input:checked {
+            accent-color: green;
+        }
+
+        /* 항목 숨기기 */
+        input:disabled {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 라디오, 체크박스 항목 구현 -->
+    <!-- label 태그와 input 태그를 for과 id 연결 (텍스트 클릭해도 항목 체크) -->
+    <form action="">
+        <div>
+            <label for="male">남자</label><input type="radio" name="gender" id="male">
+            <label for="female">여자</label><input type="radio" name="gender" id="female">
+        </div>
+        <div>
+            <label for="swim">수영</label><input id="swim" type="checkbox">
+            <label for="golf">골프</label><input id="golf" type="checkbox">
+            <!-- 체크박스 비활성화 = disabled -->
+            <label for="hike">등산</label><input id="hike" type="checkbox" disabled="true">
+        </div>
+    </form>
+
+</body>
+
+</html>

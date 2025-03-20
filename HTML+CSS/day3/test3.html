@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root = 최상위 요소(html) */
+        :root {
+            background-color: lightcyan;
+        }
+        /* input 창이 유효하지 않을 때 (ex)필수 입력값 누락, 잘못된 값 등) */
+        input:invalid {
+            background-color: violet;
+        }
+        /* input 창이 유효할 때 */
+        input:valid {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- placeholder 도움말 속성 / required 필수 입력 속성 / pattern 입력값 조건 설정 -->
+    <input type="text" placeholder="이름을 입력하세요" required>
+    <input type="email" placeholder="이메일을 입력하세요" required>
+    <input type="url" placeholder="웹 주소를 입력하세요" pattern="http://.+" required>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 메뉴를 가로 방향으로 구현하기
+1. normal layout(일반 레이아웃) : inline, inline-block, block
+2. flex layout(1차원 레이아웃) : container, item -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dongle&display=swap" rel="stylesheet">
+
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+    <style>
+        * {
+            outline: 1px solid red;
+            font-family: "Dongle", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        ul li {
+            font-family: "DM Sans" sans-serif;
+        }
+
+        .material-symbols-outlined:nth-of-type(1) {
+            font-size: 2rem;
+            color: red;
+            font-weight: 800;
+        }
+        .material-symbols-outlined:nth-of-type(2) {
+            font-size: 3rem;
+            color: greenyellow;
+            font-weight: 600;
+        }
+        .material-symbols-outlined:nth-of-type(3) {
+            font-size: 4rem;
+            color: blue;
+            font-weight: 400;
+        }
+/* ==========================================================================*/
+        /* 일반 레이아웃 */
+        /* case.1 */
+        /*     
+        .menu1 li {
+            display: inline-block;
+            width: 20%;
+        }
+        
+        .menu1 li a {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+            background-color: pink;
+        }   */
+
+        /* case.2 */
+                
+        .menu1 {
+            clear: both;
+        }
+
+        .menu1 li {
+            width: 20%;
+            float: left;
+        }
+
+        .menu1 li a {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+            background-color: pink;
+        }  
+
+        .menu1 li a:hover {
+            background-color: #222;
+            color: #f2f2f2;
+            font-weight: bolder;
+        }
+
+        .menu1 li a:hover::before {
+            display: inline-block;
+            content: ' ';
+            /* margin-right: 5px; */
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin-right: 5px;
+        }
+/* ==========================================================================*/
+        /* 1차원 레이아웃 */
+        .menu2 {
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            justify-items: stretch;
+
+            background-color: yellow;
+        }
+
+        .menu2 li {
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto; 아래 flex에 다 포함됨 (단축) 
+            */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 auto;
+            background-color: pink;
+        }
+
+        .menu2 li a {
+            flex: 1 1 auto;
+            text-align: center;
+            padding: 5px 0 /* x축, y축*/;
+        }
+
+        .menu2 li a:hover {
+            background-color: #222;
+            color: #f2f2f2;
+            font-weight: bolder;
+        }
+
+        .menu2 li a:hover::before {
+            display: inline-block;
+            content: ' ';
+            /* margin-right: 5px; */
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>일반 레이아웃</h1>
+    <span class="material-symbols-outlined">
+        search
+    </span>
+    <span class="material-symbols-outlined">
+        search
+    </span>
+    <span class="material-symbols-outlined">
+        search
+    </span>
+    <nav>
+        <ul class="menu1">
+            <li><a href="">menu-1</a></li><li><a href="">menu-2</a></li><li><a href="">menu-3</a></li><li><a href="">menu-4</a></li><li><a href="">menu-5</a></li>
+        </ul>
+    </nav>
+
+<hr>
+
+    <h1>1차원 레이아웃</h1>
+    <nav>
+        <ul class="menu2">
+            <li><a href="">menu-1</a></li>
+            <li><a href="">menu-2</a></li>
+            <li><a href="">menu-3</a></li>
+            <li><a href="">menu-4</a></li>
+            <li><a href="">menu-5</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

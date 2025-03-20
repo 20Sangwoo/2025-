@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            outline: 1px solid red;
+        }
+        
+        .wrap {
+            display: flex;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeee;
+            position: relative;
+        }
+
+        .wrap .boxes {
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+            /* position: relative; */
+        }
+
+        .box {
+            /* position: static; */
+            width: 100px;
+            height: 100px;
+        }
+        .box.box1 {
+            background-color: lightblue;
+        }
+        .box.box2 {
+            /* 조상 요소 중 static이 아닌 요소 */
+            /* 요소는 원래 자리에서 차지하는 공간을 유지 */
+            position: absolute;
+            background-color: lightcoral;
+            right: 0px;
+            top: 0px;
+        }
+        .box.box3 {
+            background-color: lightgreen;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="boxes">
+            <div class="box box1">box1</div>
+            <div class="box box2">box2</div>
+            <div class="box box3">box3</div>
+        </div>
+    </div>
+</body>
+</html>
