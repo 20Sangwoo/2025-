@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 최상위 메뉴 */
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_bar {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.top_bar nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    margin-right: 100px;
+    list-style: none;
+}
+
+.top_bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#login::after {
+    content: ' | ';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* ============================ */
+/* 헤더 */
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 헤더 이미지 */
+.img {
+    width: 600px;
+    height: 150px;
+}
+
+/* 메뉴바 */
+.menu_bar {
+    background-color: black;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu_bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.menu_bar a:hover {
+    text-decoration: underline;
+}
+/* ============================ */
+/* 컨테이너 */
+.container {
+    display: flex;
+    justify-content: center;  
+    width: 600px;  
+    margin: 0 auto;
+}
+
+/* 좌측부가정보 */
+.container .left {
+    width: 20%;
+    height: auto;
+    background-color: lightskyblue;
+}
+
+/* 메인 폼 */
+.container .input {
+    width: 80%;
+    height: auto;
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_bar {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0.3px;
+}
+
+.form_bar h3 {
+    text-align: center; 
+    letter-spacing: 0.5em;
+    margin-bottom: 15px;
+}
+
+.form_bar input,
+.form_bar select,
+.form_bar button {
+    width: 100%;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.gender,
+.hobby {
+    display: flex;
+}
+
+.form_bar button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+/* ============================ */
+/* 푸터 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #808080;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
